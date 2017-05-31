@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Loan Form</title>
+</head>
+<body>
+	<form>
+		<label for="firstName">First Name:</label>
+		<input type="text" name="firstName" id="firstName">
+
+		<label for="middleInitial">Middle Initial:</label>
+		<input type="text" name="middleInitial" id="middleInitial" length="1">
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" name="lastName" id="lastName">
+
+		<label for="address">Address:</label>
+		<input type="textarea" name="address" id="address">
+
+		<label for="occupation">Occupation:</label>
+		<input type="text" name="occupation" id="occupation">
+
+		<label for="employer">Employer:</label>
+		<input type="text" name="employer" id="employer">
+
+		<label for="employerAddress">Address:</label>
+		<input type="textarea" name="employerAddress" id="employerAddress">
+
+		<label>Select type of Loan: </label>
+		<select>
+			<option>Commercial</option>
+			<option>Real estate</option>
+			<option>Personal</option>
+			<option>Mortgage</option>
+		 </select>
+
+		 <label>Requested Amount of Loan:</label>
+		 <input type="number" name="loanAmt" min="1000" max="100000" step="1000" value="1000">
+
+		 <label>Loan Length:</label>
+		 
+		 <input type="radio" name="loanLength" value="5years" id="5years"> 
+		 <label for="5years">5 Years<br></label>
+		 
+		 <input type="radio" name="loanLength" value="10years" id="10years"> 
+		 <label for="10years">10 Years<br></label>
+
+		 <input type="radio" name="loanLength" value="15years" id="15years"> 
+		 <label for="15years">15 Years</label>
+
+		 <input type="checkbox" name="specialConditions" value="downpayment"> 
+		 <label>I have Down Payment</label>
+
+		 <input type="checkbox" name="specialConditions" value="outofstate"> 
+		 <label>Out-of-state Resident</label>
+	</form>
+</body>
+</html>
