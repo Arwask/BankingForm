@@ -2,30 +2,43 @@
 <html>
 <head>
 	<title>Bank Loan Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<form>
+	<header>
+		<h1>Welcome to XYZ Bank</h1>
+	</header>
+	<form id="mainForm">
+	<h2>Loan Application Form</h2>
+		<div class="container">		
 		<label for="firstName">First Name:</label>
 		<input type="text" name="firstName" id="firstName">
-
+		</div>
+		<div class="container">
 		<label for="middleInitial">Middle Initial:</label>
 		<input type="text" name="middleInitial" id="middleInitial" length="1">
-
+		</div>
+		<div class="container">
 		<label for="lastName">Last Name:</label>
 		<input type="text" name="lastName" id="lastName">
-
+		</div>
+		<div class="container">
 		<label for="address">Address:</label>
 		<input type="textarea" name="address" id="address">
-
+		</div>
+		<div class="container">
 		<label for="occupation">Occupation:</label>
 		<input type="text" name="occupation" id="occupation">
-
+		</div>
+		<div class="container">
 		<label for="employer">Employer:</label>
 		<input type="text" name="employer" id="employer">
-
-		<label for="employerAddress">Address:</label>
+		</div>
+		<div class="container">
+		<label for="employerAddress">Employer Address:</label>
 		<input type="textarea" name="employerAddress" id="employerAddress">
-
+		</div>
+		<div class="container">
 		<label>Select type of Loan: </label>
 		<select>
 			<option>Commercial</option>
@@ -33,26 +46,63 @@
 			<option>Personal</option>
 			<option>Mortgage</option>
 		 </select>
-
+		 </div>
+		 <div class="container">
 		 <label>Requested Amount of Loan:</label>
 		 <input type="number" name="loanAmt" min="1000" max="100000" step="1000" value="1000">
-
-		 <label>Loan Length:</label>
+		 </div>
 		 
-		 <input type="radio" name="loanLength" value="5years" id="5years"> 
-		 <label for="5years">5 Years<br></label>
-		 
-		 <input type="radio" name="loanLength" value="10years" id="10years"> 
-		 <label for="10years">10 Years<br></label>
+		<fieldset>
+			 <legend>Select Loan Length:</legend>
+			 <input type="radio" name="loanLength" value="5years" id="5years"> 
+			 <label for="5years">5 Years<br></label>
+			 
+			 <input type="radio" name="loanLength" value="10years" id="10years"> 
+			 <label for="10years">10 Years<br></label>
 
-		 <input type="radio" name="loanLength" value="15years" id="15years"> 
-		 <label for="15years">15 Years</label>
+			 <input type="radio" name="loanLength" value="15years" id="15years"> 
+			 <label for="15years">15 Years</label>
+		</fieldset>
 
+		<fieldset>
+		<legend>Special Conditions</legend>
 		 <input type="checkbox" name="specialConditions" value="downpayment"> 
-		 <label>I have Down Payment</label>
+		 <label>I have Down Payment</label><br>
 
 		 <input type="checkbox" name="specialConditions" value="outofstate"> 
-		 <label>Out-of-state Resident</label>
+		 <label>Out-of-state Resident</label><br>
+
+		 <input type="checkbox" name="specialConditions" value="married"> 
+		 <label>Married</label><br>
+
+		 <input type="checkbox" name="specialConditions" value="oosigned"> 
+		 <label>Loan will be co-signed</label><br>
+		 </fieldset>
+
+		 <div class="container">
+		 <label>Additional Comments: </label>
+		 <input type="textarea" name="additionalInfo">
+		 </div>
+
+		 <div class="container">
+		 <label>Email Address:</label>
+		 <input type="email" name="email">
+		 </div>
+
+		 <div class="container">
+		 <label>Phone Number:</label>
+		 <input type="tel" name="phone">
+		 </div>
+		 <div class="container">
+		 <label>LinkedIn URL:</label>
+		 <input type="url" name="linkedin">
+		 </div>
+
+		 <div class="container">
+		 	<button type="submit">Submit</button>
+		 	<button type="reset">Reset</button>
+		 </div>
 	</form>
+
 </body>
 </html>
